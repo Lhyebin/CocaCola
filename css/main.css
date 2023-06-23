@@ -62,7 +62,7 @@
     font-weight: 400;
     color: #555;
     line-height: 35px;
-    padding: 0 0 10px 0;
+    padding: 0 0 7px 0;
 }
 
 .header .top_bar>ul>li:hover .sub {
@@ -140,15 +140,13 @@
     font-size: 15px;
     border: 1px solid #fff;
     color: #fff;
-    padding: 5px 35px;
+    padding: 5px 45px;
 }
 
 .main_visual .main_cap .btn:hover {
-    font-size: 15px;
     border: none;
     background: var(--mgd);
     color: #fff;
-    padding: 4px 35px;
 }
 
 /* <😂bg02 텍스트 컬러 변경> */
@@ -447,7 +445,7 @@
     font-size: 14px;
     border: 1px solid #111;
     color: #111;
-    padding: 6px 30px;
+    padding: 5px 35px;
 }
 
 .main_content .content .con_sec a:hover {
