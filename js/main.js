@@ -26,8 +26,10 @@ $(function () {
     /* <음료 카테고리 다음페이지> */
 
     $('.product').on('init afterChange', function (e, s, c) {
-        $('.product_wrap .dots li').eq(c).addClass('on').siblings().removeClass('on');
+        $('.product_wrap .dots li')
+            .eq(c).addClass('on').siblings().removeClass('on');
     })
+
     $('.product').slick({
         slidesToShow: 5,
         autoplay: true,

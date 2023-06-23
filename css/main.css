@@ -25,7 +25,7 @@
 
 .header img {
     height: 47px;
-    margin: 20px auto 5px auto;
+    margin: 20px auto 10px auto;
 }
 
 .header .top_bar {
@@ -49,7 +49,7 @@
     display: none;
 
     position: absolute;
-    top: 50px;
+    top: 53px;
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 999;
@@ -61,7 +61,8 @@
     font-size: 16px;
     font-weight: 400;
     color: #555;
-    line-height: 40px;
+    line-height: 35px;
+    padding: 0 0 10px 0;
 }
 
 .header .top_bar>ul>li:hover .sub {
@@ -131,14 +132,23 @@
 .main_visual .main_cap p {
     font-size: 17px;
     font-weight: 400;
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
     color: #fff;
 }
 
 .main_visual .main_cap .btn {
+    font-size: 15px;
     border: 1px solid #fff;
     color: #fff;
     padding: 5px 35px;
+}
+
+.main_visual .main_cap .btn:hover {
+    font-size: 15px;
+    border: none;
+    background: var(--mgd);
+    color: #fff;
+    padding: 4px 35px;
 }
 
 /* <😂bg02 텍스트 컬러 변경> */
@@ -159,7 +169,6 @@
 .main_visual .cap02 .btn {
     border: 1px solid #111;
     color: #111;
-    padding: 5px 35px;
 }
 
 /* <😂> */
@@ -303,6 +312,13 @@
 
 .main_product img:hover {
     transform: rotate(10deg);
+    transform-origin: bottom;
+    transition: 0.2s;
+}
+
+.main_product img.on {
+    transform: rotate(10deg);
+    transform-origin: bottom;
     transition: 0.2s;
 }
 
@@ -431,7 +447,7 @@
     font-size: 14px;
     border: 1px solid #111;
     color: #111;
-    padding: 5px 20px;
+    padding: 6px 30px;
 }
 
 .main_content .content .con_sec a:hover {
@@ -493,7 +509,7 @@
     font-size: 35px;
     font-weight: 700;
     text-align: center;
-    margin: 0 0 7px 0;
+    margin: 0 0 10px 0;
 }
 
 .main_banner h2::before {
@@ -508,8 +524,9 @@
 
 .main_banner .title p {
     font-size: 15px;
+    font-weight: 300;
     text-align: center;
-    line-height: 20px;
+    line-height: 23px;
     margin: 0 0 60px 0;
 }
 
@@ -525,14 +542,12 @@
 .main_banner .btn {
     border: 1px solid #fff;
     color: #fff;
-    padding: 4px 40px;
+    padding: 5px 40px;
 }
 
 .main_banner .btn:hover {
     border: none;
     background: var(--mgd);
-    color: #fff;
-    padding: 4px 40px;
 }
 
 
@@ -547,7 +562,7 @@
 
 /* <브랜드 로고 모음> */
 .main_brand {
-    padding: 100px 0 70px 0;
+    padding: 100px 0 20px 0;
 }
 
 .main_brand .inner {
@@ -630,7 +645,6 @@
 
 .footer {
     background: #e41529;
-    padding: 0 0 20px 0;
     color: #fff;
 }
 
@@ -643,7 +657,6 @@
 .footer .top .left img {
     display: block;
     line-height: 28px;
-    padding: 0 20px;
     font-size: 12px;
     font-weight: 300;
     height: 40px;
@@ -683,6 +696,7 @@
 .footer .bottom {
     display: flex;
     justify-content: space-between;
+    padding: 0 0 30px 0;
 }
 
 .footer .copyright span {
